@@ -11,6 +11,11 @@
     <name>JShellExecutor</name>
     <description>Simple execution of JShell scripts.</description>
 
+    <scm>
+        <connection>scm:git:https://github.com/Thibstars/JShellScriptExecutor.git</connection>
+        <developerConnection>scm:git:https://github.com/Thibstars/JShellScriptExecutor.git</developerConnection>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
@@ -23,6 +28,24 @@
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tag>v${version}</tag>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <!-- releaseProfiles configuration will actually force a Maven profile
+                        – the `releases` profile – to become active during the Release process. -->
+                    <releaseProfiles>releases</releaseProfiles>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>1.8.1</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
