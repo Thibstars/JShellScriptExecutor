@@ -12,8 +12,8 @@
     <description>Simple execution of JShell scripts.</description>
 
     <scm>
-        <connection>scm:git:git@github.com:Thibstars/JShellScriptExecutor.git</connection>
-        <developerConnection>scm:git:git@github.com:Thibstars/JShellScriptExecutor.git</developerConnection>
+        <connection>scm:git:https://github.com/Thibstars/JShellScriptExecutor.git</connection>
+        <developerConnection>scm:git:https://github.com/Thibstars/JShellScriptExecutor.git</developerConnection>
     </scm>
 
     <build>
