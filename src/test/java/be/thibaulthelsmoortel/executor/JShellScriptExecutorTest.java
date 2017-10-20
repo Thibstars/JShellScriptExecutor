@@ -9,14 +9,12 @@ import be.thibaulthelsmoortel.executor.model.Evaluation;
 import be.thibaulthelsmoortel.executor.util.ResourceUtil;
 import java.io.IOException;
 import java.util.Map;
-import lombok.extern.log4j.Log4j2;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * @author Thibault Helsmoortel
  */
-@Log4j2
 public class JShellScriptExecutorTest {
 
     private JShellScriptExecutor scriptExecutor;
