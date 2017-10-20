@@ -4,7 +4,7 @@
 
     <groupId>be.thibaulthelsmoortel</groupId>
     <artifactId>JShellScriptExecutor</artifactId>
-    <version>1.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>JShellExecutor</name>
     <description>Simple execution of JShell scripts.</description>
@@ -13,7 +13,7 @@
         <connection>scm:git:git@github.com:Thibstars/JShellScriptExecutor.git</connection>
         <developerConnection>scm:git:git@github.com:Thibstars/JShellScriptExecutor.git</developerConnection>
         <url>https://github.com/Thibstars/JShellScriptExecutor</url>
-      <tag>v1.0-SNAPSHOT</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>
